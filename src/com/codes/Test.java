@@ -3,7 +3,7 @@ package com.codes;
 public class Test {
 	
 	public static void main(String[] args) {
-	System.out.println("this is chetan");
+	System.out.println("Finalised in chetan");
     
 	//Note: always pull from master and push it to your branch and raise pull request
 	/*  
