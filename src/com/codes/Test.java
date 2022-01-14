@@ -3,8 +3,10 @@ package com.codes;
 public class Test {
 
 	public static void main(String[] args) {
-	System.out.println("modified once again");
-    /*  
+	System.out.println("Finalised");
+    
+	//Note: always pull from master and push it to your branch and raise pull request
+	/*  
     git init
 	git add README.md
 	git commit -m "first commit"
