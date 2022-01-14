@@ -1,16 +1,17 @@
 package com.codes;
-
+/*
+ * GIT Related
+ */
 public class Test {
 	public static void main(String[] args) {
 	System.out.println("This is final");
-    
-	//Note: always pull from master and push it to your branch and raise pull request
+ 	//Note: always pull from master and push it to your branch and raise pull request
 	/*  
     git init
 	git add README.md
 	git commit -m "first commit"
 	git branch -M main
-	git remote add origin https://github.com/chetanchethu/r.git
+	(on first time)git remote add origin https://github.com/chetanchethu/r.git
 	git push -u origin main
 	*/
 	
@@ -23,7 +24,5 @@ public class Test {
 	 git switch -c yourbranch or git checkout yourbranch
 	 git push origin yourbranch
 	 */
-	
 	}
-
 }

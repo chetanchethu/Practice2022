@@ -15,6 +15,10 @@ public class add {
 	
 	}
 System.out.println(r);
+//addition without using arithmetic operator
+System.out.println(Integer.sum(45, 2));
 	}
+	
+			
 
 }
