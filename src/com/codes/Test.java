@@ -15,10 +15,11 @@ public class Test {
 	
 	//for existing code pulling and saving
 	/*
+	 git status
 	 git add .
 	 git commit -m "test"
 	 git pull origin master
-	 git switch -c yourbranch
+	 git switch -c yourbranch or git checkout yourbranch
 	 git push origin yourbranch
 	 */
 	
