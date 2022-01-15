@@ -11,7 +11,6 @@ import java.util.Map;
 1
 5
 2 2 5 50 1
-
 Output:
 50
 All elements are having frequency 1 except 2.
