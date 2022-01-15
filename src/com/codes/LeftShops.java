@@ -1,7 +1,5 @@
 package com.codes;
 
-import java.io.Console;
-
 /*
  * Midori like chocolates and he loves to try different ones. There are N shops in a market labelled 
  * from 1 to N and each shop offers a different variety of chocolate. Midori starts from ith shop and 
