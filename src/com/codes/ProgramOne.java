@@ -1,5 +1,5 @@
 package com.codes;
-/* (Geeks)
+/*
  * Program to reverse words in a String
  * Input : I,am,a,java,professional
  * Output: professional,java,a,am,I
