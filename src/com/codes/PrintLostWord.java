@@ -11,7 +11,7 @@ public class PrintLostWord {
 	System.out.println(string);
     System.out.println("Last word is :"+string.substring 
     		(string.lastIndexOf (','),string.length())
-    .replace(',', '\s').trim());
+    .replace(',', '\f').trim());
 	
     System.out.println(string.split(",").length);//No of words
 	}
