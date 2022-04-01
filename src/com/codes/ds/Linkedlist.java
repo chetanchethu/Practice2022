@@ -6,69 +6,81 @@ public class Linkedlist {
 	static class Node {
 		int data;
 		Node next;
-
-		public Node(int data) {
-			this.data = data;
-		}
 	}
 
-	public void printData() {
+	public void display() {
 		Node n = head;
-		if (n == null) {
-			System.out.println("Linkedlist is Empty");
-		}
-		while (n != null) {
-			System.out.print(n.data + " ");
+		while (n.next != null) {
+			System.out.println(n.data);
 			n = n.next;
 		}
+		System.out.println(n.data);
+
 	}
 
-//Add after 1st position
+	public void add(int data) {
+		Node node = new Node();
+		node.data = data;
+		if (head == null) {
+			head = node;
+		} else {
+			Node n = head;
+			while (n.next != null) {
+				n = n.next;
+			}
+			n.next = node;
+		}
+	}
+
+	public void delete(int index) {
+		if (index == 0) {
+			head = head.next;
+		} else {
+			Node n = head;
+			Node n1 = null;
+			for (int i = 0; i < index - 1; i++) {
+				n = n.next;
+			}
+			n1 = n.next;
+			n.next = n1.next;
+		}
+	}
+
 	public void addFirst(int data) {
-		Node addFirst = new Node(data);
-		addFirst.next = head;
-		head = addFirst;
-		printData();
+		Node node = new Node();
+		node.data = data;
+		node.next = head;
+		head = node;
+
 	}
 
-//Add after specific node	
-	public void addAfterSpecificNode(Node previousNode, int data) {
-		Node n = new Node(data);
-		if (previousNode == null) {
-			System.out.println("the previous node cannot be null");
-		}
-		n.next = previousNode.next;
-		previousNode.next = n;
-		printData();
-	}
+	public void AddAt(int index, int data) {
+		Node node = new Node();
+		node.data = data;
+		if (index == 0) {
+			node.next = head;
+			head = node;
+		} else {
+			Node n = head;
+			for (int i = 0; i < index - 1; i++) {
+				n = n.next; // 2
+			}
+			node.next = n.next;
+			n.next = node;
 
-	//add at end
-	public void addAtEnd(int data) {
-		 Node n= new Node(data);
-		if(head==null) {
-			head=new Node(data);		
 		}
-		n.next=null;
-		
-		Node l=head;
-		while(l.next!=null) 
-			l=l.next;
-			l.next=n;
-		printData();
 
 	}
 
 	public static void main(String[] args) {
-		Linkedlist list = new Linkedlist();
-		list.head = new Node(2);
-		Node second = new Node(3);
-		list.head.next = second;
-		Node third = new Node(4);
-		second.next = third;
-
-		// list.printData();
-		// list.addFirst(1);
-		// list.addAfterSpecificNode(second, 5);
-		list.addAtEnd(655);
+		Linkedlist l = new Linkedlist();
+		l.add(1);
+		l.add(2);
+		l.add(3);
+		l.add(4);
+		// l.AddAt(2, 124);
+		l.addFirst(12312);
+		l.delete(2);
+		l.display();
 	}
 }
