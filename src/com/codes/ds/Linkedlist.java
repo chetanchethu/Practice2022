@@ -69,6 +69,27 @@ public class Linkedlist {
 			n.next = node;
 
 		}
+	}
+
+	public void length() {
+		Node n = head;
+		int len = 0;
+		while (n != null) {
+			len++;
+			n = n.next;
+		}
+		System.out.println("Length is: " + len);
+	}
+
+	public boolean isPresent(int data) {
+		Node n = head;
+		while (n != null) {
+			if (n.data == data) {
+				return true;
+			}
+			n = n.next;
+		}
+		return false;
 
 	}
 
@@ -82,5 +103,7 @@ public class Linkedlist {
 		l.addFirst(12312);
 		l.delete(2);
 		l.display();
+		l.length();
+		l.isPresent(2);
 	}
 }
