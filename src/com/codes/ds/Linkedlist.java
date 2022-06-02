@@ -79,8 +79,31 @@ public class Linkedlist {
 			count++;
 			n = n.next;
 		}
+
 		return count;
 	}
+	}
+
+	public void length() {
+		Node n = head;
+		int len = 0;
+		while (n != null) {
+			len++;
+			n = n.next;
+		}
+		System.out.println("Length is: " + len);
+	}
+
+	public boolean isPresent(int data) {
+		Node n = head;
+		while (n != null) {
+			if (n.data == data) {
+				return true;
+			}
+			n = n.next;
+		}
+		return false;
+
 
 	Node reverse(Node l) {
 //		display();
@@ -106,6 +129,7 @@ public class Linkedlist {
 		// l.display();
 		head=l.reverse(head);
 		l.display();
+
 		
 		
 //		Linkedlist l2 = new Linkedlist();
@@ -114,5 +138,9 @@ public class Linkedlist {
 //		l2.head.next.next=new Node(8);
 //		head=l2.reverse(head);
 //		l2.display();
+
+		l.length();
+		l.isPresent(2);
+
 	}
 }
