@@ -1,26 +1,20 @@
 package com.codes.ds;
 
 public class Linkedlist {
-	Node head;
+	 static Node head;
 
 	static class Node {
 		int data;
 		Node next;
-	}
 
-	public void display() {
-		Node n = head;
-		while (n.next != null) {
-			System.out.println(n.data);
-			n = n.next;
+		Node(int data) {
+			this.data = data;
 		}
-		System.out.println(n.data);
-
 	}
 
-	public void add(int data) {
-		Node node = new Node();
-		node.data = data;
+	void add(int data) {
+		Node node = new Node(data);
+
 		if (head == null) {
 			head = node;
 		} else {
@@ -32,7 +26,39 @@ public class Linkedlist {
 		}
 	}
 
-	public void delete(int index) {
+	void addAt(int index, int data) {
+		Node node = new Node(data);
+	
+		if (index == 0) {
+			head = node;
+		} else {
+			Node n = head;
+			for (int i = 0; i < index - 1; i++) {
+				n = n.next;
+			}
+			node.next = n.next;
+			n.next = node;
+		}
+	}
+
+	void addFirst(int data) {
+		Node node = new Node(data);
+		
+		node.next = head;
+		head = node;
+	}
+
+	void display() {
+		Node n = head;
+		while (n.next != null) {
+			System.out.print(n.data + "  ");
+			n = n.next;
+		}
+		System.out.print(n.data);
+		System.out.println();
+	}
+
+	void delete(int index) {
 		if (index == 0) {
 			head = head.next;
 		} else {
@@ -46,30 +72,28 @@ public class Linkedlist {
 		}
 	}
 
-	public void addFirst(int data) {
-		Node node = new Node();
-		node.data = data;
-		node.next = head;
-		head = node;
-
+	int length() {
+		Node n = head;
+		int count = 0;
+		while (n != null) {
+			count++;
+			n = n.next;
+		}
+		return count;
 	}
 
-	public void AddAt(int index, int data) {
-		Node node = new Node();
-		node.data = data;
-		if (index == 0) {
-			node.next = head;
-			head = node;
-		} else {
-			Node n = head;
-			for (int i = 0; i < index - 1; i++) {
-				n = n.next; // 2
-			}
-			node.next = n.next;
-			n.next = node;
-
-		}
-
+	Node reverse(Node l) {
+//		display();
+		Node n = l;  //current
+		Node n1 = null;//next
+		Node n2 = null;//prev
+		while (n != null) {
+			n1 = n.next;
+			n.next = n2;
+			n2 = n;
+			n = n1;
+		}l=n2;
+		return l;
 	}
 
 	public static void main(String[] args) {
@@ -78,9 +102,17 @@ public class Linkedlist {
 		l.add(2);
 		l.add(3);
 		l.add(4);
-		// l.AddAt(2, 124);
-		l.addFirst(12312);
-		l.delete(2);
+		// l.addAt(2, 199);
+		// l.display();
+		head=l.reverse(head);
 		l.display();
+		
+		
+//		Linkedlist l2 = new Linkedlist();
+//		l2.head=new Node(6);
+//		l2.head.next=new Node(7);
+//		l2.head.next.next=new Node(8);
+//		head=l2.reverse(head);
+//		l2.display();
 	}
 }
