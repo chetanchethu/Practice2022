@@ -82,9 +82,8 @@ public class Linkedlist {
 
 		return count;
 	}
-	}
-
-	public void length() {
+	
+	public void lengths() {
 		Node n = head;
 		int len = 0;
 		while (n != null) {
@@ -103,7 +102,7 @@ public class Linkedlist {
 			n = n.next;
 		}
 		return false;
-
+	}
 
 	Node reverse(Node l) {
 //		display();
