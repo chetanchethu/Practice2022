@@ -1,7 +1,8 @@
 package com.codes;
 
 public class add {
-//Addition with and without arithmetic operator
+//Addition with and without 
+	//arithmetic operator
 	public static void main(String[] args) {
 		String s="84274";
 		Integer a=Integer.parseInt(s);
