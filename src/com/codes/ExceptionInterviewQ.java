@@ -5,17 +5,18 @@ public class ExceptionInterviewQ {
 		try {
 			System.out.println("sadghaskdh");
 			throw new NullPointerException();
-		} catch (RuntimeException e) {
+		} 
+		catch (NullPointerException n) {
+			System.out.println("nulllll");
+		}
+		catch (RuntimeException e) {
 			System.out.println("here");
 		}
-
 		catch (Exception ex) {
 			System.out.println("saufhsdif");
 		}
 
-//		catch (NullPointerException n) {
-//			System.out.println("nulllll");
-//		}
+
 
 	}
 }

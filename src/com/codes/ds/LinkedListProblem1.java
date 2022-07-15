@@ -50,8 +50,8 @@ public class LinkedListProblem1 {
 		LinkedListProblem1 p = new LinkedListProblem1();
 		p.add(6);
 		p.add(8);
-		p.add(1);
-		p.add(3);
+		p.add(6);
+		p.add(3);p.add(4);
 		p.display();
 		p.mid();
 	}
