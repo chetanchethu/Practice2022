@@ -17,39 +17,35 @@ import java.io.PrintWriter;
 public class ReadAndWriteFile {
 
 	static void read() throws Exception {
-		try {
-		BufferedReader fo = new BufferedReader(new FileReader("c://D___/cts.txt"));
-		String st;
-		while ((st = fo.readLine()) != null) {
-	    	//if(st.contains("3rd")) {
-			System.out.println(st);
-			// }
-		}
-		fo.close();
-		}
-		catch(Exception e) {
+		try (BufferedReader fo = new BufferedReader(new FileReader("c://D/ctsads.txt"));) {
+			String st;
+			while ((st = fo.readLine()) != null) {
+				// if(st.contains("3rd")) {
+				System.out.println(st);
+				// }
+			}
+
+		} catch (Exception e) {
 			throw new FileNotFoundException("File with the specified name not present");
 		}
 	}
-	
-	static void write() throws IOException  {//using try with resource block of JE7
-		try (FileWriter f = new FileWriter("c://D___/ctsads.txt",true); 
-				BufferedWriter b = new BufferedWriter(f); 
-				PrintWriter p = new PrintWriter(b);) 
-		{
-	    p.println("f"); //println or write or append
-		
-		} 
-		catch (IOException i) 
-		{
-			i.printStackTrace(); 
+
+	static void write() throws IOException {// using try with resource block of JE7
+		try (FileWriter f = new FileWriter("c://D/ctsads.txt",true);
+				BufferedWriter b = new BufferedWriter(f);
+				PrintWriter p = new PrintWriter(b);) {
+			p.write("hi thissss");
+			// p.println("f"); //println or write or append
+
+		} catch (IOException i) {
+			i.printStackTrace();
 		}
 
-		
 	}
-	public static void main(String[] args) throws Exception{
-    ReadAndWriteFile rw=new ReadAndWriteFile();
-  //rw.read(); 
- rw.write();
-}
+
+	public static void main(String[] args) throws Exception {
+		ReadAndWriteFile rw = new ReadAndWriteFile();
+		//rw.read();
+		 rw.write();
+	}
 }

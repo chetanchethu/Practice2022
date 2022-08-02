@@ -25,5 +25,6 @@ public class D extends C {
 	public static void main(String[] args) {
 		C c = new D();
 		System.out.println(c.m1());
+
 	}
 }

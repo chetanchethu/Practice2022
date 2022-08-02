@@ -57,7 +57,7 @@ public class LinkedListProblem2 {
 		p.add(3);
 		p.display();
 		// Creation of Loop
-		p.head.next.next.next = p.head.next;
+		p.head.next.next.next = p.head.next.next;
 		p.findCycle();
 //complexity is o(n)here
 	}

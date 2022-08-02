@@ -3,7 +3,7 @@ package com.codes;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SumWithArray { 
+public class SumWithArray { 			
 
 	public static void main(String[] args) {
 		int[] a = { 1, 2, 3, 4, 5 };
@@ -14,7 +14,8 @@ public class SumWithArray {
 		for (int i = 0; i < a.length; i++) {
 			if(m.containsKey(n-a[i])) {
 				System.out.println(n-a[i]+" "+ a[i]);
-			f=true;}
+			f=true;
+			}
 			m.put(a[i], i);
 		}
 		if(f==false) {
