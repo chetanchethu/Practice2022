@@ -1,8 +1,9 @@
 package com.codes;
 
-public class C {
+public class C  {
 
 	Number m1() {
 		return 1;
 	}
+
 }

@@ -2,7 +2,9 @@ package com.codes.ds;
 
 //To find whether a Linked list contains a cycle or not 
 public class LinkedListProblem2 {
+
 	class Node {
+
 		int data;
 		Node next;
 
@@ -16,6 +18,7 @@ public class LinkedListProblem2 {
 	Node tail = null;
 
 	void add(int data) {
+
 		Node node = new Node(data);
 		if (head == null) {
 			head = node;
@@ -51,14 +54,18 @@ public class LinkedListProblem2 {
 
 	public static void main(String[] args) {
 		LinkedListProblem2 p = new LinkedListProblem2();
-		p.add(6);
-		p.add(8);
 		p.add(1);
+		p.add(2);
 		p.add(3);
+		p.add(4);
+		p.add(5);
 		p.display();
 		// Creation of Loop
-		p.head.next.next.next = p.head.next.next;
+		System.out.println(p.head.next.next.next.next.data);
+		System.out.println(p.head.next.next.data);
+		p.head.next.next.next.next = p.head.next.next;
+
 		p.findCycle();
-//complexity is o(n)here
+		// complexity is o(n)here
 	}
 }

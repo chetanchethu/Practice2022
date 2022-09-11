@@ -1,6 +1,7 @@
 package com.codes;
 
 //input:int[] a={1,2,5,4} N=5 Find missing number ouput 3
+//first you should sort it
 public class CheckMissingNumberInArray {
 	static int find(int[] a, int n) {
 		int sumOfNos = (n * (n + 1)) / 2; // 15

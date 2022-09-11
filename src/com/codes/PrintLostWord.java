@@ -10,7 +10,7 @@ public class PrintLostWord {
 	String string = "Hello,This,is,the,lost,word";//word
 	System.out.println(string);
     System.out.println("Last word is :"+string.substring 
-    		(string.lastIndexOf (','),string.length())
+    		(string.lastIndexOf ('o'),string.length())
     .replace(',', '\f').trim());
 	
     System.out.println(string.split(",").length);//No of words

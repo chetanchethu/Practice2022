@@ -37,6 +37,6 @@ public class ReachScore {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(ReachScore.count(8));
+		System.out.println(ReachScore.count(13));
 	}
 }

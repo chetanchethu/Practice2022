@@ -7,8 +7,8 @@ public class BalancedParanthesis {
 			char ch = s.charAt(i);
 			if (ch == '(' || ch == '{' || ch == '[')
 				st.push(ch);
-			else if ((ch == ')' || ch == '}' || ch == ']') && st.empty())
-				return false;
+//			else if ((ch == ')' || ch == '}' || ch == ']') && st.empty())
+//				return false;
 			else if ((ch == ')' && st.peek() != '(') || (ch == '}' && st.peek() != '{')
 					|| (ch == ']' && st.peek() != '['))
 				return false;
@@ -22,7 +22,7 @@ public class BalancedParanthesis {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(valid("()[]{}"));
+		System.out.println(valid("({[])}"));
 	}
 
 }

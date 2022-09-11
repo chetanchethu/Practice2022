@@ -2,7 +2,7 @@ package com.codes;
 
 //Find uncommon characters of the two strings
 public class UncommonChars {
-	static String findCommonChar(String a, String b) {
+	static String findUnCommonChar(String a, String b) {
 		String result = "";
 		int max_char = 26;
 		int present[] = new int[max_char];
@@ -37,7 +37,7 @@ public class UncommonChars {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(findCommonChar("characters", "x"));
+		System.out.println(findUnCommonChar("characters", "characte"));
 	}
 
 }

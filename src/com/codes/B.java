@@ -22,7 +22,7 @@ public class B extends A {
 //4//		a=new A();
 //		a.m1();
 
-//		 B c=(B) new A();
-//		 c.m1();
+		B c =(B) new A();
+		c.m1();
 	}
 }

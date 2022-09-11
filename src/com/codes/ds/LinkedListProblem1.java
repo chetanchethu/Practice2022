@@ -51,6 +51,7 @@ public class LinkedListProblem1 {
 		p.add(6);
 		p.add(8);
 		p.add(6);
+		p.add(7);
 		p.add(3);p.add(4);
 		p.display();
 		p.mid();

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-//Remove duplicates and add 2 for each element using stream api.
+//Remove duplicates and add all elements using stream api.
 public class Javae {
 	
 	static void doPrint(int[] a) {
@@ -13,7 +13,7 @@ public class Javae {
 		for (int i = 0; i < a.length; i++) {
 			list.add(a[i]);
 		}
-		System.out.println(list.stream().distinct().sorted().reduce((c,e)->c+e).get());
+		System.out.println(list.stream().distinct().reduce((c,e)->c+e).get());
 		
 	}
 

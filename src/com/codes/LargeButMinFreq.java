@@ -19,7 +19,7 @@ All elements are having frequency 1 except 2.
  */
 public class LargeButMinFreq {
 	public static void main(String[] args) {
-		int[] a= {2 ,2 ,5 ,50, 50,75,75,50,45,1};
+		int[] a= {2 ,2 ,5 ,50, 50,75,50,45,1};
 		HashMap<Integer, Integer>hm=new HashMap<>();
 		for (int i = 0; i < a.length; i++) {
 			int temp=a[i];

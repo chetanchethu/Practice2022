@@ -16,7 +16,7 @@ public class SumWithArray {
 				System.out.println(n-a[i]+" "+ a[i]);
 			f=true;
 			}
-			m.put(a[i], i);
+			m.put(a[i], 1);
 		}
 		if(f==false) {
 			System.out.println("No pairs found");
