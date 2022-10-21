@@ -31,8 +31,7 @@ public class DleteAlterNodes {
         if (head == null)
             return;
 		Node n = head;
-		Node n1 = null;
-		while (n != null && n.next != null) {
+		while (n!=null && n.next != null ) {
 			n.next = n.next.next;
 			n = n.next;
 		}
@@ -70,6 +69,7 @@ public class DleteAlterNodes {
 		d.add(4);
 		d.add(5);
 		d.add(6);
+		
 		d.del(head);
 		d.show();
 	}

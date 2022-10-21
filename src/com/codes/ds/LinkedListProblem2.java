@@ -64,7 +64,6 @@ public class LinkedListProblem2 {
 		System.out.println(p.head.next.next.next.next.data);
 		System.out.println(p.head.next.next.data);
 		p.head.next.next.next.next = p.head.next.next;
-
 		p.findCycle();
 		// complexity is o(n)here
 	}

@@ -12,8 +12,7 @@ public class PatternCheck {
 			}
 			i++;
 			}
-		
-
+	
 	}
 
 }

@@ -37,7 +37,7 @@ public class UncommonChars {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(findUnCommonChar("characters", "characte"));
+		System.out.println(findUnCommonChar("abc", "sdd"));
 	}
 
 }
