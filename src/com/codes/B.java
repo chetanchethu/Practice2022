@@ -19,8 +19,8 @@ public class B extends A {
 	public static void main(String[] args) {
 		A a = new B();
 		a.m1();
-//4//		a=new A();
-//		a.m1();
+//		A ac=new A();
+//		ac.m1();
 
 		B c =(B) new A();
 		c.m1();

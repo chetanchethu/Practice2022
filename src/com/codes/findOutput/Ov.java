@@ -30,4 +30,5 @@ public abstract class Ov {
 	void m1() {
 		System.out.println("void m1 method");
 	}
+	
 }

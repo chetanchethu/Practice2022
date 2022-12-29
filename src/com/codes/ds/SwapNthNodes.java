@@ -48,9 +48,9 @@ public class SwapNthNodes {
 	}
 
 	static Node swap(Node head, int n, int k) {
-		if (k > n)
+		if (k > n)  //n=8 k=4
 			return head;
-		if (k == n - k + 1)
+		if (k == n - k + 1)//3
 			return head;
 
 		Node x = head, prevX = null;
@@ -94,14 +94,15 @@ public class SwapNthNodes {
 		}System.out.println();
 	}
 
+	
 	public static void main(String[] args) {
 		SwapNthNodes s = new SwapNthNodes();
-		SwapNthNodes.push(1);
+		SwapNthNodes.push(1);//1,2,3,4,5,6,7
 		s.push(2);
 		s.push(3);
 		s.push(4);
-		s.push(5);s.push(6);
-		Node res = s.swap(head, 6, 6);
+		s.push(5);s.push(6);s.push(7);s.push(8);
+		Node res = s.swap(head, 8, 3);
 		System.out.println(res.data);
 	}
 

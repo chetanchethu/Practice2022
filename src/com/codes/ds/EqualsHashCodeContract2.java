@@ -22,8 +22,6 @@ public class EqualsHashCodeContract2 {
 
 	@Override
 	public boolean equals(Object obj) {
-		System.out.println(this.getClass());
-		System.out.println(obj.getClass());
 		if (obj == null || this.getClass() != obj.getClass()) {
 			return false;
 		}
@@ -31,8 +29,6 @@ public class EqualsHashCodeContract2 {
 			return true;
 		}
 		EqualsHashCodeContract2 e = (EqualsHashCodeContract2) obj;
-		System.out.println(e.getId());
-		System.out.println(this.getId());
 		return (this.getId() == e.getId());
 	}
 	

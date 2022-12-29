@@ -48,6 +48,6 @@ public class FindNthFromEnd {
 		f.head.next.next = new Node(3);
 		f.head.next.next.next = new Node(4);
 		f.head.next.next.next.next = new Node(5);
-		System.out.println(f.nthNode(5, head));
+		System.out.println(f.nthNode(2, head));
 	}
 }

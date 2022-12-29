@@ -1,6 +1,6 @@
-package com.codes;
+package com.goldman;
 
-//Find uncommon characters of the two strings
+//remove common characters from the two strings
 public class UncommonChars {
 	static String findUnCommonChar(String a, String b) {
 		String result = "";
@@ -37,7 +37,7 @@ public class UncommonChars {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(findUnCommonChar("abc", "sdd"));
+		System.out.println(findUnCommonChar("abdc", "sdad"));
 	}
 
 }

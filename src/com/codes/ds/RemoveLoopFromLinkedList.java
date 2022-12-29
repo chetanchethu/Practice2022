@@ -68,7 +68,7 @@ public class RemoveLoopFromLinkedList {
 		r.head.next.next.next = new Node(4);
 		r.head.next.next.next.next = new Node(5);
 		r.head.next.next.next.next.next = r.head.next.next;
-//		r.display();
+		//		r.display();
 		r.detectAndRemoveLoop(head);
 		r.display();
 

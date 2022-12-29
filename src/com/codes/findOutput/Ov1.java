@@ -18,6 +18,7 @@ public class Ov1 extends Ov {
 	}
 
 	public static void main(String[] args) {
+		
 		Ov1 v = new Ov1();
 		Ov.a();
 		v.b();

@@ -5,7 +5,7 @@ public class ExceptionInterviewQ {
 		try {
 			System.out.println("start");
 			int a=2/0;
-			throw new ArithmeticException();
+			throw new ArithmeticException("kjij");
 		}
 		
 		catch (RuntimeException e) {

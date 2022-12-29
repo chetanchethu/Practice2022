@@ -6,16 +6,16 @@ import java.util.Map;
 public class SumWithArray { 			
 
 	public static void main(String[] args) {
-		int[] a = { 1, 2, 3, 4, 5 };
-		int n = 9;
+		int[] a = { 1,1,1,1 };
+		int n = 2;
 		boolean f=false;
-		
+		int c=0;
 		Map<Integer, Integer> m = new HashMap<>();
 		for (int i = 0; i < a.length; i++) {
 			if(m.containsKey(n-a[i])) {
 				System.out.println(n-a[i]+" "+ a[i]);
 			f=true;
-			}
+			c++;}
 			m.put(a[i], 1);
 		}
 		if(f==false) {

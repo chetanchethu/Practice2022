@@ -40,7 +40,6 @@ public class DStack {
 			System.arraycopy(stack, 0, nStack, 0, capacity);
 			stack = nStack;
 		}
-		
 	}
 
 	public int peek() {

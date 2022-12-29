@@ -13,7 +13,7 @@ public class BinarySearch {
 			if(a[mid]==x) 
 				return mid;
 			
-			if(a[mid]<x) 
+			if(a[mid]<x) //1,2,3,4,5
 				left=mid+1;
 			else
 				right=mid-1;

@@ -54,6 +54,7 @@ public class Stack {
 		s.push(4);
 		s.push(5);
 		s.push(2);
+		System.out.println(s.size());
 //		s.push(0);
 //		System.out.println(s.size());
 //		s.display();

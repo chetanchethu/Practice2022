@@ -15,9 +15,21 @@ import java.io.PrintWriter;
  * read and write to existing file
  */
 public class ReadAndWriteFile {
-
+//	boolean f=false;
+//	try(PrintWriter p=new PrintWriter(new BufferedWriter(new FileWriter("E://test.txt",true)))){
+//		try(BufferedReader b=new BufferedReader(new FileReader("E://test.txt"))){
+//			String r="";
+//			while((r=b.readLine())!=null) {
+//				if(r.contains("added")) {
+//					p.write("\n"+"hhhhhh");
+//				f=true;}
+//			}
+//			if(f==false) {
+//				System.out.println("word not found");
+//			}
+//		}}
 	static void read() throws Exception {
-		try (BufferedReader fo = new BufferedReader(new FileReader("c://D/ctsads.txt"));) {
+		try (BufferedReader fo = new BufferedReader(new FileReader("E://test.txt"))) {
 			String st;
 			while ((st = fo.readLine()) != null) {
 				// if(st.contains("3rd")) {
@@ -31,9 +43,9 @@ public class ReadAndWriteFile {
 	}
 
 	static void write() throws IOException {// using try with resource block of JE7
-		try (FileWriter f = new FileWriter("c://D/ctsads.txt",true);
+		try (FileWriter f = new FileWriter("E://test.txt",true);
 				BufferedWriter b = new BufferedWriter(f);		
-				PrintWriter p = new PrintWriter(b);) {
+				PrintWriter p = new PrintWriter(b)) {
 			p.write("hi thissss");
 			// p.println("f"); //println or write or append
 

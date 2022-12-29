@@ -21,6 +21,7 @@ public class R2 extends R1 {
 		System.out.println(g.x);
 		System.out.println(g.y);
 		//System.out.println(g.z); //CE error
+//	R2 e=new R2();
+//	System.out.println(e.x+" "+e.y+" "+e.z);
 	}
-
 }
