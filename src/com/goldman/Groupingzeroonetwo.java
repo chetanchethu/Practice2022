@@ -8,6 +8,7 @@ import java.util.Map;
 
 public class Groupingzeroonetwo {
 public static void main(String[] args) {
+	
 	int[] a= {0,1,0,0,1,1,2,0};
 	int n=a.length;
 	int min=0,mid=0,end=n-1;
@@ -21,7 +22,8 @@ public static void main(String[] args) {
 		}
 		else if(a[mid]==1) {
 			mid++;
-		}else {
+		}
+		else {
 			int temp=a[mid];
 			a[mid]=a[end];
 			a[end]=temp;

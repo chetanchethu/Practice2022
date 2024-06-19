@@ -8,12 +8,20 @@ public class Employee {
 	private int age;
 	private String gender;
 	private String department;
+	private int salary;
 
 	public Employee(String name, int age, String gender, String department) {
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
 		this.department = department;
+	}
+	public Employee(String name, int age, String gender, String department,int salary) {
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		this.department = department;
+		this.salary=salary;
 	}
 
 	public Employee(String name, int age) {
@@ -54,6 +62,15 @@ public class Employee {
 
 	public void setDepartment(String department) {
 		this.department = department;
+	}
+	
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
 	}
 
 	@Override

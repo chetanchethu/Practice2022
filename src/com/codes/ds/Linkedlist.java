@@ -1,7 +1,10 @@
 package com.codes.ds;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Linkedlist {
-	 static Node head;
+	static Node head;
 
 	static class Node {
 		int data;
@@ -28,7 +31,7 @@ public class Linkedlist {
 
 	void addAt(int index, int data) {
 		Node node = new Node(data);
-	
+
 		if (index == 0) {
 			head = node;
 		} else {
@@ -43,7 +46,7 @@ public class Linkedlist {
 
 	void addFirst(int data) {
 		Node node = new Node(data);
-		
+
 		node.next = head;
 		head = node;
 	}
@@ -79,10 +82,9 @@ public class Linkedlist {
 			count++;
 			n = n.next;
 		}
-
 		return count;
 	}
-	
+
 	public void lengths() {
 		Node n = head;
 		int len = 0;
@@ -106,15 +108,16 @@ public class Linkedlist {
 
 	Node reverse(Node l) {
 //		display();
-		Node n = l;  //current
-		Node n1 = null;//next
-		Node n2 = null;//prev
+		Node n = l; // current
+		Node n1 = null;// next
+		Node n2 = null;// prev
 		while (n != null) {
 			n1 = n.next;
 			n.next = n2;
 			n2 = n;
 			n = n1;
-		}l=n2;
+		}
+		l = n2;
 		return l;
 	}
 
@@ -126,11 +129,9 @@ public class Linkedlist {
 		l.add(4);
 		// l.addAt(2, 199);
 		// l.display();
-		head=l.reverse(head);
+		head = l.reverse(head);
 		l.display();
 
-		
-		
 //		Linkedlist l2 = new Linkedlist();
 //		l2.head=new Node(6);
 //		l2.head.next=new Node(7);

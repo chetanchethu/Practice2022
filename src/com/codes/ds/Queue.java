@@ -41,7 +41,7 @@ public class Queue {
 
 	public void show() {
 		for (int i = 0; i < size; i++) {
-			System.out.print(queue[(front + i) % n] + " ");
+			System.out.print(queue[(i) % n] + " ");
 		}
 		System.out.println();
 	}

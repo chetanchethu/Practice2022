@@ -22,6 +22,7 @@ public class AnagramsGrouping {
 			Arrays.sort(p);
 			String g=new String(p);
 			if(hm.containsKey(g)) {
+				System.out.println(hm.get(g));
 				hm.get(g).add(s[i]);
 			}
 			else {

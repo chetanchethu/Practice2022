@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 //Remove duplicates and add all elements using stream api.
-public class Javae {
+public class Java8 {
 	
 	static void doPrint(int[] a) {
 		List<Integer> list=new ArrayList<Integer>();
@@ -14,7 +14,6 @@ public class Javae {
 			list.add(a[i]);
 		}
 		System.out.println(list.stream().distinct().reduce((c,e)->c+e).get());
-		
 	}
 
 	public static void main(String[] args) {

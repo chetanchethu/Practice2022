@@ -3,7 +3,8 @@ package com.codes;
 import java.util.Arrays;
 
 public class MergeArray {
-
+	// int[] a = { 1, 2, 5, 8, 10 };
+	 //int[] b = { 3,1, 4, 6,3, 7,9 };//output 1,1,2,3,3,4,5,6,7,8,9,10
 	public static void main(String[] args) {
 		int[] a = { 1, 2, 5, 8, 10 };
 		int[] b = { 3, 4, 6, 7 };

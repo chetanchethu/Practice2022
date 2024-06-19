@@ -5,9 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AnagramNumber {
-
+//You can convert char[] to string by creating new STring object
 	public static void main(String[] args) {
-		String s="ab ab dog god";
+		String s="ab ab dog god ba";
 		String[] sp=s.split(" ");
 		int count=0;
 		Map<String,Integer> hm=new HashMap<>();

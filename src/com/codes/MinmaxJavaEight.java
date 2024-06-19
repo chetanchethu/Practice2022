@@ -14,6 +14,9 @@ public class MinmaxJavaEight {
 		List<Integer> li = new ArrayList<Integer>();
 		li = list.stream().sorted().collect(Collectors.toList());
 		System.out.println(li.get(li.size() - 1));
+		//OR
+//		System.out.println(li.stream().min(Integer::compare).get());
+//		System.out.println(li.stream().max(Integer::compare).get());
 	}
 
 	public static void main(String args[]) {

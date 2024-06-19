@@ -32,6 +32,6 @@ public class ProgramTwo {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(ProgramTwo.sum("122223", "97"));
+		System.out.println(ProgramTwo.sum("471", "47"));
 	}
 }
